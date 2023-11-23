@@ -1,0 +1,423 @@
+<div class="navigation">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hotelNav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h2>
+                    <a class="navbar-brand" href="#">SWAPNO <span>PURAN</span>
+                        <p class="logo_caption">Your Dreamy Resort</p>
+                    </a>
+                </h2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="hotelNav">
+                <nav class="menu menu--iris">
+                    <ul class="nav navbar-nav menu__list">
+                        <li class="menu__item menu__item--current"><a href="" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a href="/home#about" class="menu__link scroll">About</a></li>
+                        <li class="menu__item"><a href="#team" class="menu__link scroll">Team</a></li>
+                        <li class="menu__item"><a href="/home#gallery" class="menu__link scroll">Gallery</a></li>
+                        <li class="menu__item"><a href="#rooms" class="menu__link scroll">Rooms</a></li>
+                        <li class="menu__item"><a href="#contact" class="menu__link scroll">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#bs-carousel" data-slide-to="1"></li>
+        <li data-target="#bs-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-1"></div>
+            <div class="hero">
+                <div>
+                    <h4>SWAPNO PURAN</h4>
+                    <h3>Making your dream vacation come true</h3>
+                    <p>Welcome to our hotels</p>
+                </div>
+                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-2"></div>
+            <div class="hero">
+                <div>
+                    <h4>SWAPNO PURAN</h4>
+                    <h3>Feel alive here</h3>
+                    <p>Come & enjoy precious moment with us</p>
+                </div>
+                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+            </div>
+        </div>
+        <div class="item slides">
+            <div class="slide-3"></div>
+            <div class="hero">
+                <div>
+                    <h4>SWAPNO PURAN</h4>
+                    <h3>Don’t just dream it. Vacation it.</h3>
+                    <p>Get accommodation today</p>
+                </div>
+                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="availability-agileits">
+    <div class="col-md-12 book-form-left-w3layouts">
+        <a [routerLink]="'/reservation'">
+            <h2>ROOM RESERVATION</h2>
+        </a>
+    </div>
+    <div class="clearfix"></div>
+</div>
+
+<div class="banner-bottom">
+    <div class="container">
+        <div class="agileits_banner_bottom">
+            <h3><span>Experience a good stay, enjoy fantastic offers</span> Find our friendly welcoming reception
+            </h3>
+        </div>
+        <div class="w3ls_banner_bottom_grids">
+            <ul class="cbp-ig-grid">
+                <li>
+                    <div class="grid_effect">
+                        <span class="cbp-ig-icon"><i class="fa fa-bed fa-5x"></i></span>
+                        <h4 class="cbp-ig-title">MASTER BEDROOMS</h4>
+                        <span class="cbp-ig-category">PERFECT SLEEP</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="grid_effect">
+                        <span class="cbp-ig-icon"><i class="fa fa-building fa-5x"></i></span>
+                        <h4 class="cbp-ig-title">PRIVATE BALCONY</h4>
+                        <span class="cbp-ig-category">PERFECT PLACE</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="grid_effect">
+                        <span class="cbp-ig-icon"><i class="fa fa-utensils fa-5x"></i></span>
+                        <h4 class="cbp-ig-title">RESTAURANT</h4>
+                        <span class="cbp-ig-category">DELICIOUS DINING</span>
+                    </div>
+                </li>
+                <li>
+                    <div class="grid_effect">
+                        <span class="cbp-ig-icon"><i class="fa fa-wifi fa-5x"></i></span>
+                        <h4 class="cbp-ig-title">WIFI COVERAGE</h4>
+                        <span class="cbp-ig-category">STAY CONNECTED</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="agileits_banner_bottom">
+            <div class="banner menu__item">
+                <button type="button" class="menu__link" data-toggle="modal" data-target="#amenitiesModal">Learn
+                    More</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="amenitiesModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span></h4>
+                <img src="../../../assets/images/room-amenities.jpeg" alt=" " class="img-responsive">
+                <h5>Feel like home</h5>
+                <p>When elegance meets comfort. We provide iconic experiences with our wide range of amenities. Try our
+                    food menu, awesome services and friendly staff
+                    while you are here.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="how-section1" id="about" #about>
+    <div class="row">
+        <div class="col-md-6 how-img">
+            <img src="../../../assets/images/event-02.jpeg" class="rounded float-left" alt="" />
+        </div>
+        <div class="col-md-6">
+            <h3 class="title-w3-agileits title-black-wthree">About Us</h3>
+            <p class="about-para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatem
+                eligendi fugit veniam? Optio velit asperiores distinctio mollitia atque, reiciendis totam iure
+                temporibus vel magnam assumenda nulla fugit exercitationem labore quas possimus, commodi quibusdam.
+                Dolores nemo id porro, sed odit distinctio quas cupiditate iure temporibus ex delectus deleniti magnam
+                dolore nobis laboriosam iusto. Labore autem cumque quo doloribus temporibus tempore. Nisi iusto
+                explicabo neque animi distinctio? Atque accusamus ab tenetur sapiente sed, nesciunt voluptas totam,
+                molestias sequi optio reprehenderit cupiditate.</p>
+        </div>
+    </div>
+    <div class="row" style="margin-top: 6%;">
+        <div class="col-md-6">
+            <h3 class="title-w3-agileits title-black-wthree">Experience</h3>
+            <p class="about-para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatem
+                eligendi fugit veniam? Optio velit asperiores distinctio mollitia atque, reiciendis totam iure
+                temporibus vel magnam assumenda nulla fugit exercitationem labore quas possimus, commodi quibusdam.
+                Dolores nemo id porro, sed odit distinctio quas cupiditate iure temporibus ex delectus deleniti magnam
+                dolore nobis laboriosam iusto. Labore autem cumque quo doloribus temporibus tempore. Nisi iusto
+                explicabo neque animi distinctio? Atque accusamus ab tenetur sapiente sed, nesciunt voluptas totam,
+                molestias sequi optio reprehenderit cupiditate.</p>
+        </div>
+        <div class="col-md-6 how-img">
+            <img src="../../../assets/images/event-04.jpeg" class="rounded float-right" alt="" />
+        </div>
+    </div>
+</div>
+
+
+<div class="advantages">
+    <div class="container">
+        <div class="advantages-main">
+            <h3 class="title-w3-agileits">Our Services</h3>
+            <div class="advantage-bottom">
+                <div class="col-md-6 advantage-grid left-w3ls wow bounceInLeft" data-wow-delay="0.3s">
+                    <div class="advantage-block ">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                        <h4>Stay First, Pay After! </h4>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+                            ut et voluptates.</p>
+                        <p><i class="fa fa-check" aria-hidden="true"></i>Decorated room, proper air conditioned</p>
+                        <p><i class="fa fa-check" aria-hidden="true"></i>Private balcony</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6 advantage-grid right-w3ls wow zoomIn" data-wow-delay="0.3s">
+                    <div class="advantage-block">
+                        <i class="fa fa-clock" aria-hidden="true"></i>
+                        <h4>24 Hour Restaurant</h4>
+                        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet
+                            ut et voluptates.</p>
+                        <p><i class="fa fa-check" aria-hidden="true"></i>24 hours room service</p>
+                        <p><i class="fa fa-check" aria-hidden="true"></i>24-hour Concierge service</p>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="portfolio-w3ls" id="gallery" style="margin-top: 6%;">
+    <h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
+    <div class="row">
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-05.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-05.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-03.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-03.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/food-04.jpg" class="swipebox"><img src="../../../assets/images/food-04.jpg"
+                    class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/food-02.jpeg" class="swipebox"><img
+                    src="../../../assets/images/food-02.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/resort-scene-01.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/event-05.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-05.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/resort-scene-02.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-02.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/resort-scene-01.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+        <div class="col-sm-6 col-md-3 gallery-grid gallery1">
+            <a href="../../../assets/images/resort-staff.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-staff.jpeg" class="img-responsive" alt="/">
+                <div class="textbox">
+                    <h4>SWAPNO PURAN</h4>
+                    <p><i class="fa fa-image" aria-hidden="true"></i></p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="clearfix"> </div>
+</section>
+
+<div class="plans-section" id="rooms">
+    <div class="container">
+        <h3 class="title-w3-agileits title-black-wthree" style="margin-bottom: 5%;">Rooms And Rates</h3>
+        <div class="pricing-table-main">
+            <div class="col-sm-12 col-md-4 price-grid">
+                <div class="price-block agile">
+                    <div class="price-gd-top">
+                        <img src="../../../assets/images/imperial-room.jpg" alt=" " class="img-responsive"
+                            style="height: 10%;" />
+                        <h4>Imperial Room</h4>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+
+                            </ul>
+                        </div>
+                        <div class="price-select">
+                            <h3><span>Rs</span>4200</h3>
+                            <a [routerLink]="'/reservation'">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 price-grid ">
+                <div class="price-block agile">
+                    <div class="price-gd-top">
+                        <img src="../../../assets/images/premium-room.jpg" alt=" " class="img-responsive" />
+                        <h4>Premium Room</h4>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price-select">
+                            <h3><span>Rs</span>2700</h3>
+                            <a [routerLink]="'/reservation'">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-4 price-grid lost">
+                <div class="price-block agile">
+                    <div class="price-gd-top">
+                        <img src="../../../assets/images/executive-room.jpg" alt=" " class="img-responsive" />
+                        <h4>Executive Room</h4>
+                    </div>
+                    <div class="price-gd-bottom">
+                        <div class="price-list">
+                            <ul>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                                <li><i class="fa fa-star-o" aria-hidden="true"></i></li>
+                            </ul>
+                        </div>
+                        <div class="price-select">
+                            <h3><span>Rs</span>2400</h3>
+                            <a [routerLink]="'/reservation'">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
