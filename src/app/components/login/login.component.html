@@ -1,0 +1,85 @@
+<nav class="navbar navbar-expand-md navbar-dark">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <h3 class="mb-0">Resort Admin Console</h3>
+        </a>
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#adminNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="adminNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a [routerLink]="'/home'" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="showcase" class="d-flex justify-content-center align-items-center">
+    <div id="overlay">
+
+    </div>
+    <div class="container text-white text-center" id="header">
+        <h3 class="display-6 mb-0">SWAPNO PURAN</h3>
+        <h1 class="display-2">Making your dream vacation come true</h1>
+        <p class="lead d-none d-md-block">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ea
+            ratione? Consequuntur
+            ullam dicta ad recusandae repudiandae nam molestiae repellendus?
+        </p>
+        <button id="bookBtn" class="btn btn-primary btn-lg text-white px-5" data-bs-toggle="modal"
+            data-bs-target="#loginModal">LOGIN</button>
+    </div>
+</section>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" id="loginModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login Form</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form #loginForm="ngForm">
+                    <p>Please fill out the form below to access the management portal</p>
+                    <div class="form-group">
+                        <label for="email">Username</label>
+                        <input type="text" class="form-control" name="username" placeholder="Username" ngModel
+                            #usernameInput="ngModel" required>
+                        <span class="help-block" style="color:red;"
+                            *ngIf="usernameInput.invalid && usernameInput.touched">Please enter a username</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Password</label>
+                        <input type="password" class="form-control" name="password" placeholder="Password" ngModel
+                            #passwordInput="ngModel" required>
+                        <span class="help-block" style="color:red;"
+                            *ngIf="passwordInput.invalid && passwordInput.touched">Please enter a password.</span>
+                    </div>
+                    <button type="button" [disabled]="loginForm.invalid || showLoading" name="button"
+                        class="btn login_btn" (click)="onLogin(loginForm.value)" data-bs-dismiss="modal">
+                        <i *ngIf="showLoading" class="fas fa-spinner fa-spin"></i>&nbsp;&nbsp;
+                        <span *ngIf="showLoading">Loading...</span>
+                        <span *ngIf="!showLoading">Login</span>
+                    </button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn close_btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
