@@ -1028,6 +1028,22 @@ p.about-para-1 {
 		letter-spacing: 9px;
 	}
 
+    .cbp-ig-icon:before {
+		font-size: 3em;
+	}
+
+    .cbp-ig-grid .cbp-ig-title {
+		font-size: .9em;
+		letter-spacing: 2px;
+	}
+
+    .cbp-ig-grid .cbp-ig-category {
+		text-transform: uppercase;
+		display: inline-block;
+		font-size: .8em;
+		letter-spacing: 1.5px;
+	}
+
     .hero p {
 		font-size: .9em;
 		letter-spacing: 9px;
@@ -1116,6 +1132,13 @@ p.about-para-1 {
     .book-form-left-w3layouts h2 {
         padding: 20px 0;
     }
+
+    .cbp-ig-grid li:last-child,.cbp-ig-grid li:nth-child(3) {
+		border-top: 1px solid #cfdbf3;
+	}
+	.cbp-ig-grid li:nth-child(2){
+		border-right: 1px solid #cfdbf3;
+	}
 
     .w3ls_banner_bottom_grids {
         margin: 2.5em 0 0;
@@ -1269,6 +1292,10 @@ p.about-para-1 {
         font-size: 13px;
     }
 
+    .cbp-ig-grid .cbp-ig-title {
+		font-size: .8em;
+	}
+
     .banner-bottom {
         padding: 55px 0px;
     }
@@ -1280,6 +1307,10 @@ p.about-para-1 {
     p.about-para-1 {
         font-size: 14.5px;
     }
+
+    .cbp-ig-icon:before {
+		font-size: 2.5em;
+	}
 
     .advantage-block h4 {
         font-size: 19px;
@@ -1500,6 +1531,20 @@ p.about-para-1 {
     .hero p {
 		letter-spacing: 3px;
 	}
+
+    .cbp-ig-grid li {
+		width: 100%;
+	}
+	.cbp-ig-grid li:last-child {
+		border-right: none;
+	}
+	.cbp-ig-grid li {
+		border-left: none;
+	}
+	.cbp-ig-grid li:nth-child(2) {
+		border-top: 1px solid #cfdbf3;
+		border-right: none;
+	}
 }
 
 @media(max-width:480px) {
@@ -1508,6 +1553,13 @@ p.about-para-1 {
         text-align: center;
         margin: 10px 0;
     }
+
+    .cbp-ig-grid .cbp-ig-title {
+		font-size: .7em;
+	}
+	.cbp-ig-grid .cbp-ig-category {
+		font-size: .75em;
+	}
 
     p.about-para-1 {
         font-size: 14px;
@@ -1571,6 +1623,13 @@ p.about-para-1 {
 @media(max-width:384px) {
     .hero h3 {
 		letter-spacing: 5px;
+	}
+
+    .cbp-ig-grid .cbp-ig-title {
+		font-size: .9em;
+	}
+	.cbp-ig-grid .cbp-ig-category {
+		font-size: .95em;
 	}
 
     .hero p {
@@ -1642,6 +1701,10 @@ p.about-para-1 {
     .hero h3 {
 		letter-spacing: 3px;
 		font-size: 12px;
+	}
+
+    .banner-bottom h3 span {
+		font-size: 13px!important;
 	}
 
     .flex-control-nav {
