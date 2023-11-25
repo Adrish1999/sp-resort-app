@@ -509,7 +509,6 @@ p.logo_caption {
     left: 50%;
     margin: -10px 0 0 -80px;
     -webkit-transition: margin-top 0.2s;
-    /* top or translate does not seem to work in Firefox */
     -moz-transition: margin-top 0.2s;
     transition: margin-top 0.2s;
 }

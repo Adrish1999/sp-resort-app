@@ -25,12 +25,6 @@ export class LoginComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (this.authenticationService.isLoggedIn()) {
-      this.router.navigateByUrl('/adminConsole');
-    }
-    else {
-      this.router.navigateByUrl('/home');
-    }
   }
 
   onLogin(user: User): void {
