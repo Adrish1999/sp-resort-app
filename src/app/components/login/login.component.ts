@@ -35,7 +35,7 @@ export class LoginComponent implements OnInit {
           const token: string | null = response.headers.get(HeaderType.JWT_TOKEN);
           this.authenticationService.saveToken(token);
           this.authenticationService.addUserToLocalCache(response.body);
-          this.router.navigateByUrl('/adminConsole');
+          this.router.navigateByUrl('/admin');
           this.sendNotification(NotificationType.SUCCESS, 'Successfully logged in to Resort Admin Console');
           this.showLoading = false;
         },

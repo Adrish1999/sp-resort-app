@@ -23,7 +23,7 @@ import { AdminConsoleComponent } from './components/admin-console/admin-console.
     ReservationComponent,
     FooterComponent,
     LoginComponent,
-    AdminConsoleComponent
+    AdminConsoleComponent,
   ],
   imports: [
     BrowserModule,

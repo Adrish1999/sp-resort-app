@@ -8,11 +8,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <h2>
-                    <a class="navbar-brand" href="#">SWAPNO <span>PURAN</span>
+                <h4>
+                    <a class="navbar-brand" href="#">SWAPNO <span>PURAN</span> RESORT
                         <p class="logo_caption">Your Dreamy Resort</p>
                     </a>
-                </h2>
+                </h4>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-right" id="hotelNav">
@@ -49,33 +49,33 @@
             <div class="slide-1"></div>
             <div class="hero">
                 <div>
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <h3>Making your dream vacation come true</h3>
                     <p>Welcome to our hotels</p>
                 </div>
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+                <a [routerLink]="'/reservation'"><button class="btn btn-hero btn-lg" role="button">BOOK NOW</button></a>
             </div>
         </div>
         <div class="item slides">
             <div class="slide-2"></div>
             <div class="hero">
                 <div>
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <h3>Feel alive here</h3>
                     <p>Come & enjoy precious moment with us</p>
                 </div>
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+                <a [routerLink]="'/reservation'"><button class="btn btn-hero btn-lg" role="button">BOOK NOW</button></a>
             </div>
         </div>
         <div class="item slides">
             <div class="slide-3"></div>
             <div class="hero">
                 <div>
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <h3>Don’t just dream it. Vacation it.</h3>
                     <p>Get accommodation today</p>
                 </div>
-                <button class="btn btn-hero btn-lg" role="button">Learn More</button>
+                <a [routerLink]="'/reservation'"><button class="btn btn-hero btn-lg" role="button">BOOK NOW</button></a>
             </div>
         </div>
     </div>
@@ -84,11 +84,91 @@
 <div id="availability-agileits">
     <div class="col-md-12 book-form-left-w3layouts">
         <a [routerLink]="'/reservation'">
-            <h2>ROOM RESERVATION</h2>
+            <h2>CLICK HERE FOR ROOM RESERVATION</h2>
         </a>
     </div>
     <div class="clearfix"></div>
 </div>
+
+<div class="container" style="margin-top: 5%;">
+    <div class="row">
+        <div class="col-md-6">
+            <h3 class="title-w3-agileits title-black-wthree">About Us</h3>
+            <p class="about-para-1">Swapno Puran Resort is located in Jotgiri, Howrah, only 13 kilometers away from the
+                holy river Ganga. It is a luxurious
+                property that will make you feel like royalty. There is plenty of artwork, home theater, balcony,
+                parking on property, a bar, and fireplaces. Swimming pool, picnic area, 24 hour security, garden, and
+                gym are the amenities included. It also has appliances such as refrigerator/freezer, microwave, oven,
+                electricity,
+                ceiling fans, water purification system , and a water heater. Swapno Puran Resort is a perfect balance
+                between
+                comfort, luxury, and convenience, so come and enjoy all what Swapno Puran Resort has to offer!</p>
+        </div>
+        <div class="col-md-6 how-img">
+            <img src="../../../assets/images/event-02.jpeg" class="rounded float-left" alt="" />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="gallery-green">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="../../../assets/images/green-01.jpg" alt="Green Resort 1" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="../../../assets/images/green-02.jpg" alt="Green Resort 2" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="../../../assets/images/green-05.jpg" alt="Green Resort 3" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="../../../assets/images/green-03.jpg" alt="Green Resort 4" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="../../../assets/images/green-06.jpg" alt="Green Resort 5" class="gallery__img">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="../../../assets/images/green-04.jpg" alt="Green Resort 6" class="gallery__img">
+                </figure>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div style="margin-top: 10%; display: grid;">
+                <h3 class="title-green">Stay green, stay with us</h3>
+                <p class="about-para-1">Swapno Puran Resort is the place where green hospitality pampers both you and
+                    the planet.
+                    Discover a resort committed to preserving nature’s beauty and experience eco-friendly comfort
+                    without compromising on luxury.
+                </p>
+                <ul class="green-list">
+                    <li> <i class="fas fa-leaf" style="color: #55a937; display: inline-block;"></i> Fresh air, fresh
+                        outlook - come stay in our green resort.</li>
+                    <li> <i class="fas fa-leaf" style="color: #55a937; display: inline-block;"></i> Get away from it all
+                        - without leaving a carbon footprint.</li>
+                    <li> <i class="fas fa-leaf" style="color: #55a937; display: inline-block;"></i> Green hospitality,
+                        the way it should be.</li>
+                    <li> <i class="fas fa-leaf" style="color: #55a937; display: inline-block;"></i> Inspiring
+                        eco-friendly tourism, every day.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" style="margin-top: 6%;">
+        <div class="col-md-6">
+            <h3 class="title-w3-agileits title-black-wthree">Experience With Us</h3>
+            <p class="about-para-1">To provide further comfort and entertainment, there is a picnic area, a garden, a
+                pool, and a gym for the tenants’ pleasures. Also, provided with the property are all the necessary
+                appliances: refrigerator/freezer, microwave, oven, televisions and many more. Plus, it comes
+                complete with air conditioning, ceiling fans, water purification system, and water heaters. Swapno Puran
+                Resort is the perfect space to create lasting memories or a homely office for all types of events.</p>
+        </div>
+        <div class="col-md-6 how-img">
+            <img src="../../../assets/images/event-04.jpeg" class="rounded float-right" alt="" />
+        </div>
+    </div>
+</div>
+
 
 <div class="banner-bottom">
     <div class="container">
@@ -144,8 +224,8 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4>SWAPNO <span>PURAN</span></h4>
-                <img src="assets/images/room-amenities.jpeg" alt=" " class="img-responsive">
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/room-amenities.jpeg" alt=" " class="img-responsive">
                 <h5>Feel like home</h5>
                 <p>When elegance meets comfort. We provide iconic experiences with our wide range of amenities. Try our
                     food menu, awesome services and friendly staff
@@ -155,35 +235,269 @@
     </div>
 </div>
 
-<div class="how-section1" id="about" #about>
+<div class="container">
+    <h3 class="title-w3-agileits title-black-wthree">Facilities And Amenities</h3>
     <div class="row">
-        <div class="col-md-6 how-img">
-            <img src="assets/images/event-02.jpeg" class="rounded float-left" alt="" />
-        </div>
-        <div class="col-md-6">
-            <h3 class="title-w3-agileits title-black-wthree">About Us</h3>
-            <p class="about-para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatem
-                eligendi fugit veniam? Optio velit asperiores distinctio mollitia atque, reiciendis totam iure
-                temporibus vel magnam assumenda nulla fugit exercitationem labore quas possimus, commodi quibusdam.
-                Dolores nemo id porro, sed odit distinctio quas cupiditate iure temporibus ex delectus deleniti magnam
-                dolore nobis laboriosam iusto. Labore autem cumque quo doloribus temporibus tempore. Nisi iusto
-                explicabo neque animi distinctio? Atque accusamus ab tenetur sapiente sed, nesciunt voluptas totam,
-                molestias sequi optio reprehenderit cupiditate.</p>
+        <div class="container-amenities">
+            <div class="area-02">
+                <img src="../../../assets/images/resort-scene-04.jpeg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Restaurant</h5>
+            </div>
+            <div class="area-03">
+                <img src="../../../assets/images/balcony.jpg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Private Balcony</h5>
+            </div>
+            <div class="area-01">
+                <img src="../../../assets/images/event-01.jpeg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Event Management</h5>
+            </div>
+            <div class="area-04">
+                <img src="../../../assets/images/gym.jpg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Gymnasium</h5>
+            </div>
+            <div class="area-05">
+                <img src="../../../assets/images/food-01.jpeg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Authentic Food</h5>
+            </div>
+            <div class="area-06">
+                <img src="../../../assets/images/bonfire.jpg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Fireplace</h5>F
+            </div>
+            <div class="area-07">
+                <img src="../../../assets/images/swimming-pool.jpg" alt="" class="gallery__img">
+                <h5 class="amenities-label">Swimming Pool</h5>
+            </div>
         </div>
     </div>
-    <div class="row" style="margin-top: 6%;">
-        <div class="col-md-6">
-            <h3 class="title-w3-agileits title-black-wthree">Experience</h3>
-            <p class="about-para-1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores voluptatem
-                eligendi fugit veniam? Optio velit asperiores distinctio mollitia atque, reiciendis totam iure
-                temporibus vel magnam assumenda nulla fugit exercitationem labore quas possimus, commodi quibusdam.
-                Dolores nemo id porro, sed odit distinctio quas cupiditate iure temporibus ex delectus deleniti magnam
-                dolore nobis laboriosam iusto. Labore autem cumque quo doloribus temporibus tempore. Nisi iusto
-                explicabo neque animi distinctio? Atque accusamus ab tenetur sapiente sed, nesciunt voluptas totam,
-                molestias sequi optio reprehenderit cupiditate.</p>
+</div>
+
+<!-- Locations -->
+<section class="locations" id="locations">
+    <<h3 class="title-w3-agileits title-black-wthree">Iconic Landmarks Nearby</h3>
+
+        <div class="location-content">
+
+            <a data-toggle="modal" data-target="#belurMathModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/belur-math.jpg" alt="">
+                    <h5>Belur Math</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+
+
+            <a data-toggle="modal" data-target="#dakshinTempleModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/dakshin-temple.jpg" alt="">
+                    <h5>Dakshineshwar Kali Temple</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#howrahBridgeModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/howrah-bridge.jpg" alt="">
+                    <h5>Howrah Bridge</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#adyaPeethModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/adya-peath.jpg" alt="">
+                    <h5>Adya Peeth</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#botanicalGardenModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/botanical-garden.JPG" alt="">
+                    <h5>Shibpur Botanical Garden</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#vSetuModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/v-setu-1.jpg" alt="">
+                    <h5>Vidyasagar Setu</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#gangaModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/ganga-aarti.jpg" alt="">
+                    <h5>Ganga Aarti At Ghats</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
+            <a data-toggle="modal" data-target="#railMuseumModal">
+                <div class="col-content">
+                    <img src="../../../assets/images/rail-museum.jpg" alt="">
+                    <h5>Howrah Railway Museum</h5>
+                    <p>Click To Know More <i class="fas fa-arrow-right"></i></p>
+                </div>
+            </a>
+
         </div>
-        <div class="col-md-6 how-img">
-            <img src="assets/images/event-04.jpeg" class="rounded float-right" alt="" />
+</section>
+<div class="modal fade" id="belurMathModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/belur-math-modal.jpg" alt=" " class="img-responsive">
+                <h5>BELUR MATH</h5>
+                <p>This monastery, which is located in Howrah, is dedicated to Sri Ramakrishna. It was previously known
+                    as the Baranagar Math. Later, in 1899, it was changed to Belur by Vivekananda. It is located near
+                    the Hooghly River.<strong> And, it is only around 16 kilometers away from Swapno Puran Resort.
+                    </strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="dakshinTempleModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/dakshin-temple-modal.jpg" alt=" " class="img-responsive">
+                <h5>DAKSHINESHWAR KALI TEMPLE</h5>
+                <p>Dakshineswar Kali Temple, majestic 19th-century temple in the village of Dakshineswar, outside
+                    Kolkata, India, on the east bank of the Hugli River, an arm of the Ganges. The presiding deity is
+                    Bhavatarini, an aspect of the goddess Kali. <strong>The temple is around 14.8 kilometers away from
+                        Swapno
+                        Puran Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="howrahBridgeModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/howrah-bridge-modal.jpg" alt=" " class="img-responsive">
+                <h5>HOWRAH BRIDGE</h5>
+                <p>Also known as the Rabindra Setu, Howrah Bridge is one of the major tourist attractions in Howrah and
+                    it is one of the
+                    busiest bridges, which is constructed on the Hooghly River, connecting Kolkata city with
+                    Howrah. The best time to visit this bridge is during nighttime because at night Howrah Bridge is lit
+                    with bright lights to showcase its beauty. <strong>Only 12.3 kilometers away from Swapno Puran
+                        Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="adyaPeethModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/adya-peath-modal.jpg" alt=" " class="img-responsive">
+                <h5>ADYAPEETH TEMPLE</h5>
+                <p>Adyapeath is another Hindu Temple which was built in 1967. The main altar of the temple is having
+                    three sub-altars. The bottom is having the statue of Sri Ramkrishna, the middle is having Maa Adya
+                    and the top altar displays Radha and Krishna.<strong>Only 15.3 kilometers away from Swapno Puran
+                        Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="botanicalGardenModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/botanical-garden-modal.jpg" alt=" " class="img-responsive">
+                <h5>SHIBPUR BOTANICAL GARDEN</h5>
+                <p>Acharya Jagadish Chandra Bose Indian Botanic Garden, which contains over 12,000 plants, is one of the
+                    most popular tourist sites in the region. It also houses the largest and oldest banyan tree in the
+                    world. The gardens are a paradise for botanists and can be enjoyed for a walk or picnic in the lush
+                    greenery.<strong>Only 15.9 kilometers away from Swapno Puran
+                        Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="vSetuModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/v-setu-modal.jpg" alt=" " class="img-responsive">
+                <h5>VIDYASAGAR SETU</h5>
+                <p>This bridge is located on the Hooghly River and connects Kolkata and Howrah. It is also the longest
+                    in Asia and the longest cable bridge in India. The bridge was named after Pandit Ishwar Chandra
+                    Vidyasagar, a former Bengali educationist.<strong>Only 14 kilometers away from Swapno Puran
+                        Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="gangaModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/ganga-aarti-modal.jpg" alt=" " class="img-responsive">
+                <h5>GANGA AARTI AT GHATS</h5>
+                <p>The aarti, or worshipping River Ganga, takes place every day, at dusk. The ceremony is performed by a
+                    group of priests on the ghats. Amid blowing of conch shells, the ringing of several bells, the
+                    clanging of brass cymbals and the chanting chorus of mantras, the priests venerate
+                    Ganga. <strong>The Ganga is only 13 kilometers away from Swapno Puran
+                        Resort.</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="railMuseumModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <img src="../../../assets/images/rail-museum-modal.jpeg" alt=" " class="img-responsive">
+                <h5>HOWRAH RAILWAY MUSEUM</h5>
+                <p>A miniature Howrah railway station can be found inside the museum. The Rail Museum Howrah has
+                    preserved an antique steam engine, India’s first electric locomotive, and various railway-related
+                    models, replicas, and the evolution of electrification. <strong>Only 12.8 kilometers away from
+                        Swapno Puran Resort.</strong></p>
+            </div>
         </div>
     </div>
 </div>
@@ -225,37 +539,37 @@
     <h3 class="title-w3-agileits title-black-wthree">Our Gallery</h3>
     <div class="row">
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-06.jpeg" class="swipebox"><img
-                    src="assets/images/event-06.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-05.jpeg" class="swipebox"><img
-                    src="assets/images/event-05.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-05.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-05.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-03.jpeg" class="swipebox"><img
-                    src="assets/images/event-03.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-03.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-03.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-06.jpeg" class="swipebox"><img
-                    src="assets/images/event-06.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -263,37 +577,37 @@
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/food-04.jpg" class="swipebox"><img src="assets/images/food-04.jpg"
+            <a href="../../../assets/images/food-04.jpg" class="swipebox"><img src="../../../assets/images/food-04.jpg"
                     class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-06.jpeg" class="swipebox"><img
-                    src="assets/images/event-06.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-06.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-06.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/food-02.jpeg" class="swipebox"><img
-                    src="assets/images/food-02.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/food-02.jpeg" class="swipebox"><img
+                    src="../../../assets/images/food-02.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/resort-scene-01.jpeg" class="swipebox"><img
-                    src="assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/resort-scene-01.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -301,37 +615,37 @@
     </div>
     <div class="row">
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/event-05.jpeg" class="swipebox"><img
-                    src="assets/images/event-05.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/event-05.jpeg" class="swipebox"><img
+                    src="../../../assets/images/event-05.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/resort-scene-02.jpeg" class="swipebox"><img
-                    src="assets/images/resort-scene-02.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/resort-scene-02.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-02.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/resort-scene-01.jpeg" class="swipebox"><img
-                    src="assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/resort-scene-01.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-scene-01.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
         </div>
         <div class="col-sm-6 col-md-3 gallery-grid gallery1">
-            <a href="assets/images/resort-staff.jpeg" class="swipebox"><img
-                    src="assets/images/resort-staff.jpeg" class="img-responsive" alt="/">
+            <a href="../../../assets/images/resort-staff.jpeg" class="swipebox"><img
+                    src="../../../assets/images/resort-staff.jpeg" class="img-responsive" alt="/">
                 <div class="textbox">
-                    <h4>SWAPNO PURAN</h4>
+                    <h4>SWAPNO PURAN RESORT</h4>
                     <p><i class="fa fa-image" aria-hidden="true"></i></p>
                 </div>
             </a>
@@ -347,7 +661,7 @@
             <div class="col-sm-12 col-md-4 price-grid">
                 <div class="price-block agile">
                     <div class="price-gd-top">
-                        <img src="assets/images/imperial-room.jpg" alt=" " class="img-responsive"
+                        <img src="../../../assets/images/imperial-room.jpg" alt=" " class="img-responsive"
                             style="height: 10%;" />
                         <h4>Imperial Room</h4>
                     </div>
@@ -372,7 +686,7 @@
             <div class="col-sm-12 col-md-4 price-grid ">
                 <div class="price-block agile">
                     <div class="price-gd-top">
-                        <img src="assets/images/premium-room.jpg" alt=" " class="img-responsive" />
+                        <img src="../../../assets/images/premium-room.jpg" alt=" " class="img-responsive" />
                         <h4>Premium Room</h4>
                     </div>
                     <div class="price-gd-bottom">
@@ -395,7 +709,7 @@
             <div class="col-sm-12 col-md-4 price-grid lost">
                 <div class="price-block agile">
                     <div class="price-gd-top">
-                        <img src="assets/images/executive-room.jpg" alt=" " class="img-responsive" />
+                        <img src="../../../assets/images/executive-room.jpg" alt=" " class="img-responsive" />
                         <h4>Executive Room</h4>
                     </div>
                     <div class="price-gd-bottom">
@@ -418,6 +732,12 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+</div>
+
+<div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
+    <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
+        <i class="fas fa-arrow-up bounce" style="color: #157114;"></i>
+    </button>
 </div>
 
 <app-footer></app-footer>
