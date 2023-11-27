@@ -14,7 +14,7 @@ import { AuthenticationService } from './services/authentication.service';
 import { NotificationService } from './services/notification.service';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
-import { AdminConsoleComponent } from './components/admin-console/admin-console.component';
+import { AdminConsoleModule } from './components/admin-console/admin-console.module';
 
 @NgModule({
   declarations: [
@@ -22,15 +22,15 @@ import { AdminConsoleComponent } from './components/admin-console/admin-console.
     HomeComponent,
     ReservationComponent,
     FooterComponent,
-    LoginComponent,
-    AdminConsoleComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    NotificationModule
+    NotificationModule,
+    AdminConsoleModule
   ],
   providers: [AuthGuard, AuthenticationService, NotificationService, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]
