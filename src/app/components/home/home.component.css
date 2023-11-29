@@ -2094,8 +2094,8 @@ h5.amenities-label {
     background: rgb(235, 188, 100);
     border-radius: 50px;
     opacity: 0;
-    width: 4%;
-    height: 9%;
+    width: 30px;
+    height: 50px;
     transition: all .2s ease-in-out;
 }
 
@@ -2155,7 +2155,7 @@ figure.tr-figure>img {
 --------------------------------------------------------------*/
 .gallery-food {
     overflow: hidden;
-    margin-top: 5%;
+    margin-top: 10%;
 }
 
 .gallery-food .swiper-pagination {
