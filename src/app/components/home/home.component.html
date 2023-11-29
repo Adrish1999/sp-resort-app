@@ -261,7 +261,7 @@
             </div>
             <div class="area-06">
                 <img src="assets/images/bonfire.jpg" alt="" class="gallery__img">
-                <h5 class="amenities-label">Fireplace</h5>F
+                <h5 class="amenities-label">Fireplace</h5>
             </div>
             <div class="area-07">
                 <img src="assets/images/swimming-pool.jpg" alt="" class="gallery__img">
@@ -618,9 +618,10 @@
         <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="card-tr-box-part">
                 <figure class="tr-figure">
-                    <img src="assets/images/howrah-station.jpg" style="width: 100%; height: 70%;" alt="Station">
+                    <img src="assets/images/howrah-station.jpg" style="width: 100%; height: 70%;"
+                        alt="Station">
                 </figure>
-                
+
                 <h5 class="card-tr-title">Howrah Railway Station</h5>
                 <div class="card-tr-text">
                     <p class="about-para-1">Situated 11.8 kilometers away from Swapno Puran Resort.</p>
@@ -633,7 +634,7 @@
                 <figure class="tr-figure">
                     <img src="assets/images/airport.jpeg" style="width: 100%; height: 50%;" alt="Airport">
                 </figure>
-               
+
                 <h5 class="card-tr-title">Netaji Subhash Chandra Bose International Airport</h5>
                 <div class="card-tr-text">
                     <p class="about-para-1">Situated 23.3 kilometers away from Swapno Puran Resort.</p>
@@ -644,7 +645,8 @@
         <div class="col-lg-4 col-md-4 col-sm-4">
             <div class="card-tr-box-part">
                 <figure class="tr-figure">
-                    <img src="assets/images/bus-terminus.jpg" style="width: 100%; height: 60%;" alt="Bus Terminus">
+                    <img src="assets/images/bus-terminus.jpg" style="width: 100%; height: 60%;"
+                        alt="Bus Terminus">
                 </figure>
                 <h5 class="card-tr-title">Kona High Road Bus Terminus</h5>
                 <div class="card-tr-text">
@@ -807,6 +809,80 @@
     <div class="clearfix"> </div>
 </section>
 
+<section id="gallery-food" class="gallery-food section-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h3 class="title-w3-agileits title-black-wthree">Enjoy Our <span>Delicious Food</span></h3>
+        </div>
+
+        <div class="gallery-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/bengali-thali.jpeg">
+                        <img src="assets/images/bengali-thali.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/fish-finger.jpeg">
+                        <img src="assets/images/fish-finger.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/chicken-biryani.jpeg">
+                        <img src="assets/images/chicken-biryani.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/tikka-kebab.jpeg">
+                        <img src="assets/images/tikka-kebab.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/hariyali-chicken.jpeg">
+                        <img src="assets/images/hariyali-chicken.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/butter-masala.jpeg">
+                        <img src="assets/images/butter-masala.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/chicken-lollipop.jpeg">
+                        <img src="assets/images/chicken-lollipop.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/mixed-fried-rice.jpeg">
+                        <img src="assets/images/mixed-fried-rice.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/chilli-chicken.jpeg">
+                        <img src="assets/images/chilli-chicken.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a class="glightbox" data-gallery="images-gallery" href="assets/images/crispy-chicken.jpeg">
+                        <img src="assets/images/crispy-chicken.jpeg" class="img-responsive" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
 <div class="plans-section" id="rooms">
     <div class="container">
         <h3 class="title-w3-agileits title-black-wthree" style="margin-bottom: 5%;">Rooms And Rates</h3>
@@ -887,10 +963,10 @@
     </div>
 </div>
 
-<div class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}">
-    <button type="button" class="btn active" data-toggle="button" aria-pressed="true" (click)="scrollToTop()">
-        <i class="fas fa-arrow-up bounce" style="color: #157114;"></i>
-    </button>
-</div>
+<a class="scroll-to-top" [ngClass]="{'show-scrollTop': windowScrolled}" (click)="scrollToTop()">
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <i class=" fas fa-arrow-up bounce" style="color: #157114;"></i>
+    </div>
+</a>
 
 <app-footer></app-footer>

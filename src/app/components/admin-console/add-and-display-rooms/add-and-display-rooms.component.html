@@ -14,22 +14,28 @@
                 ADD NEW ROOM
             </div>
             <div class="panel-body">
-                <form name="form" method="post">
+                <form #roomInputForm="ngForm" (ngSubmit)="onSubmitRoomDetails(roomInputForm.value); roomInputForm.resetForm()">
                     <div class="form-group">
                         <label>Type Of Room *</label>
-                        <select name="troom" class="form-control" required>
-                            <option value selected></option>
-                            <option value="Superior Room">IMPERIAL ROOM</option>
-                            <option value="Deluxe Room">PREMIUM ROOM</option>
-                            <option value="Single Room">EXECUTIVE ROOM</option>
+                        <select name="roomType" class="form-control" ngModel #roomTypeInput="ngModel" required>
+                            <option value="Imperial" ngValue="Imperial">IMPERIAL ROOM</option>
+                            <option value="Premium" ngValue="Premium">PREMIUM ROOM</option>
+                            <option value="Executive" ngValue="Executive">EXECUTIVE ROOM</option>
                         </select>
+                        <span class="help-block" style="color:red;"
+                            *ngIf="roomTypeInput.invalid && roomTypeInput.touched">Please select a room type</span>
                     </div>
 
                     <div class="form-group">
-                        <label>Room Number</label>
-                        <input name="roomNumber" class="form-control" required>
+                        <label>Room Number *</label>
+                        <input name="roomNumber" class="form-control" name="roomNumber" placeholder="Room Number"
+                            ngModel #roomNumberInput="ngModel" required>
+                        <span class="help-block" style="color:red;"
+                            *ngIf="roomNumberInput.invalid && roomNumberInput.touched">Please enter a Room Number</span>
                     </div>
-                    <input type="submit" name="add" value="Add New" class="btn btn-primary">
+                    <button type="submit" [disabled]="roomInputForm.invalid || showLoading" name="button"
+                        class="btn btn-primary">Add Room
+                    </button>
                 </form>
             </div>
 
@@ -50,62 +56,15 @@
                                 <thead>
                                     <tr>
                                         <th>Room ID</th>
+                                        <th>Room Number</th>
                                         <th>Room Type</th>
-                                        <th>Bedding</th>
-
                                     </tr>
                                 </thead>
                                 <tbody>
-
-                                    <tr class=even gradeC>
-                                        <td>1</td>
-                                        <td>Superior Room</td>
-                                        <th>Single</th>
-                                    </tr>
-                                    <tr class=odd gradeX>
-                                        <td>2</td>
-                                        <td>Superior Room</td>
-                                        <th>Double</th>
-                                    </tr>
-                                    <tr class=even gradeC>
-                                        <td>3</td>
-                                        <td>Superior Room</td>
-                                        <th>Triple</th>
-                                    </tr>
-                                    <tr class=odd gradeX>
-                                        <td>4</td>
-                                        <td>Single Room</td>
-                                        <th>Quad</th>
-                                    </tr>
-                                    <tr class=even gradeC>
-                                        <td>5</td>
-                                        <td>Superior Room</td>
-                                        <th>Quad</th>
-                                    </tr>
-                                    <tr class=odd gradeX>
-                                        <td>6</td>
-                                        <td>Deluxe Room</td>
-                                        <th>Single</th>
-                                    </tr>
-                                    <tr class=even gradeC>
-                                        <td>7</td>
-                                        <td>Deluxe Room</td>
-                                        <th>Double</th>
-                                    </tr>
-                                    <tr class=odd gradeX>
-                                        <td>8</td>
-                                        <td>Deluxe Room</td>
-                                        <th>Triple</th>
-                                    </tr>
-                                    <tr class=even gradeC>
-                                        <td>9</td>
-                                        <td>Deluxe Room</td>
-                                        <th>Quad</th>
-                                    </tr>
-                                    <tr class=odd gradeX>
-                                        <td>10</td>
-                                        <td>Guest House</td>
-                                        <th>Single</th>
+                                    <tr *ngFor="let room of rooms; let odd = odd" [ngClass]="odd ? 'odd' : 'even'">
+                                        <td>{{room.id}}</td>
+                                        <td>{{room.roomNumber}}</td>
+                                        <th>{{room.roomType}}</th>
                                     </tr>
                                 </tbody>
                             </table>
