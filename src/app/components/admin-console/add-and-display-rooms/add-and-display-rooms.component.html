@@ -1,1 +1,119 @@
-<p>add-and-display-rooms works!</p>
+<div class="row">
+    <div class="col-md-12">
+        <h1 class="page-header">
+            NEW ROOM <small></small>
+        </h1>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-md-6 col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                ADD NEW ROOM
+            </div>
+            <div class="panel-body">
+                <form name="form" method="post">
+                    <div class="form-group">
+                        <label>Type Of Room *</label>
+                        <select name="troom" class="form-control" required>
+                            <option value selected></option>
+                            <option value="Superior Room">IMPERIAL ROOM</option>
+                            <option value="Deluxe Room">PREMIUM ROOM</option>
+                            <option value="Single Room">EXECUTIVE ROOM</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Room Number</label>
+                        <input name="roomNumber" class="form-control" required>
+                    </div>
+                    <input type="submit" name="add" value="Add New" class="btn btn-primary">
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-md-6 col-sm-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                ROOMS INFORMATION
+            </div>
+            <div class="panel-body">
+                <!-- Advanced Tables -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>Room ID</th>
+                                        <th>Room Type</th>
+                                        <th>Bedding</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+
+                                    <tr class=even gradeC>
+                                        <td>1</td>
+                                        <td>Superior Room</td>
+                                        <th>Single</th>
+                                    </tr>
+                                    <tr class=odd gradeX>
+                                        <td>2</td>
+                                        <td>Superior Room</td>
+                                        <th>Double</th>
+                                    </tr>
+                                    <tr class=even gradeC>
+                                        <td>3</td>
+                                        <td>Superior Room</td>
+                                        <th>Triple</th>
+                                    </tr>
+                                    <tr class=odd gradeX>
+                                        <td>4</td>
+                                        <td>Single Room</td>
+                                        <th>Quad</th>
+                                    </tr>
+                                    <tr class=even gradeC>
+                                        <td>5</td>
+                                        <td>Superior Room</td>
+                                        <th>Quad</th>
+                                    </tr>
+                                    <tr class=odd gradeX>
+                                        <td>6</td>
+                                        <td>Deluxe Room</td>
+                                        <th>Single</th>
+                                    </tr>
+                                    <tr class=even gradeC>
+                                        <td>7</td>
+                                        <td>Deluxe Room</td>
+                                        <th>Double</th>
+                                    </tr>
+                                    <tr class=odd gradeX>
+                                        <td>8</td>
+                                        <td>Deluxe Room</td>
+                                        <th>Triple</th>
+                                    </tr>
+                                    <tr class=even gradeC>
+                                        <td>9</td>
+                                        <td>Deluxe Room</td>
+                                        <th>Quad</th>
+                                    </tr>
+                                    <tr class=odd gradeX>
+                                        <td>10</td>
+                                        <td>Guest House</td>
+                                        <th>Single</th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--End Advanced Tables -->
+            </div>
+        </div>
+    </div>
+</div>

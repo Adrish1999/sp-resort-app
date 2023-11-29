@@ -2115,6 +2115,36 @@ h5.amenities-label {
     font-size: 3em;
 }
 
+.card-tr-box{
+    padding:60px 0px;
+}
+
+.card-tr-box-part{
+    border-radius:0;
+    padding:40px 10px;
+    margin:10px 0px;
+    text-align: center;
+}
+.card-tr-text{
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h5.card-tr-title {
+    font-size: 22px;
+    color: #0a0a0a;
+    font-weight: 400;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+figure.tr-figure > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
 @-webkit-keyframes bounce {
     0% {
         top: 0;

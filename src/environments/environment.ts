@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   authenticationUrl: 'http://localhost:8082',
+  roomManagementUrl: 'http://localhost:8081'
 };
 
 /*

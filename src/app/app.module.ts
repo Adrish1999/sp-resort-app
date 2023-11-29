@@ -15,13 +15,13 @@ import { NotificationService } from './services/notification.service';
 import { AuthGuard } from './guards/auth.guard';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
 import { AdminConsoleModule } from './components/admin-console/admin-console.module';
+import { SharedFooterModule } from './shared-modules/shared-footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ReservationComponent,
-    FooterComponent,
     LoginComponent
   ],
   imports: [
@@ -30,7 +30,8 @@ import { AdminConsoleModule } from './components/admin-console/admin-console.mod
     FormsModule,
     HttpClientModule,
     NotificationModule,
-    AdminConsoleModule
+    AdminConsoleModule,
+    SharedFooterModule
   ],
   providers: [AuthGuard, AuthenticationService, NotificationService, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }],
   bootstrap: [AppComponent]

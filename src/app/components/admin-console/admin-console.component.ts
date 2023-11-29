@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { NotificationType } from 'src/app/enum/notification-type.enum';
+import { AuthenticationService } from 'src/app/services/authentication.service';
+import { NotificationService } from 'src/app/services/notification.service';
 
 @Component({
   selector: 'app-admin-console',
@@ -7,9 +11,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdminConsoleComponent implements OnInit {
 
-  constructor() { }
+  constructor(private authenticationService: AuthenticationService, private router: Router, private notificationService: NotificationService) { }
 
   ngOnInit(): void {
+    this.router.navigateByUrl('/admin/addRoom');
   }
 
+  onLogout(): void {
+    this.authenticationService.logout();
+    this.router.navigateByUrl('/login');
+    this.notificationService.notify(NotificationType.SUCCESS, "Logout Successful");
+  }
 }

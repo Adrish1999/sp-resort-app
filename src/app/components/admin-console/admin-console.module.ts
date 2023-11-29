@@ -11,6 +11,8 @@ import { NotificationModule } from 'src/app/notification.module';
 import { AuthenticationService } from 'src/app/services/authentication.service';
 import { NotificationService } from 'src/app/services/notification.service';
 import { AddAndDisplayRoomsComponent } from './add-and-display-rooms/add-and-display-rooms.component';
+import { FooterComponent } from '../footer/footer.component';
+import { SharedFooterModule } from 'src/app/shared-modules/shared-footer.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,8 @@ import { AddAndDisplayRoomsComponent } from './add-and-display-rooms/add-and-dis
     FormsModule,
     HttpClientModule,
     NotificationModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    SharedFooterModule
   ],
   providers: [AuthGuard, AuthenticationService, NotificationService, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }]
 })
