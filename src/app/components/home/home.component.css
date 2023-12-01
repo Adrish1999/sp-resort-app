@@ -2091,11 +2091,11 @@ h5.amenities-label {
     position: fixed;
     bottom: 20px;
     right: 17px;
-    background: rgb(235, 188, 100);
+    background: rgb(235, 9, 9);
     border-radius: 50px;
     opacity: 0;
-    width: 30px;
-    height: 50px;
+    width: 40px;
+    height: 60px;
     transition: all .2s ease-in-out;
 }
 
@@ -2148,61 +2148,6 @@ figure.tr-figure>img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-}
-
-/*--------------------------------------------------------------
-# Food Gallery Section
---------------------------------------------------------------*/
-.gallery-food {
-    overflow: hidden;
-    margin-top: 10%;
-}
-
-.gallery-food .swiper-pagination {
-    margin-top: 20px;
-    position: relative;
-}
-
-.gallery-food .swiper-pagination .swiper-pagination-bullet {
-    width: 12px;
-    height: 12px;
-    background-color: #d1d1d7;
-    opacity: 1;
-}
-
-.gallery-food .swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #F05941;
-}
-
-.gallery-food .swiper-slide-active {
-    text-align: center;
-}
-
-.section-bg {
-    background-color: #eee;
-}
-
-.section-header {
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.section-header h3 span {
-    color: #E86A33;
-}
-
-@media (min-width: 992px) {
-    .gallery-food .swiper-wrapper {
-        padding: 40px 0;
-    }
-
-    .gallery-food .swiper-slide-active {
-        border: 6px solid #C51605;
-        padding: 4px;
-        background: #fff;
-        z-index: 1;
-        transform: scale(1.2);
-    }
 }
 
 @-webkit-keyframes bounce {

@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment';
 import { Room } from '../model/room';
+import { Booking } from '../model/booking';
 
 @Injectable({
   providedIn: 'root'
@@ -10,6 +11,7 @@ import { Room } from '../model/room';
 export class RoomService {
 
   private roomUrl: string = environment.roomManagementUrl + '/rooms';
+  private bookingUrl: string = environment.roomManagementUrl + '/booking';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,5 +21,13 @@ export class RoomService {
 
   public getAllRooms(): any {
     return this.httpClient.get(this.roomUrl);
+  }
+
+  public getAvailableRooms(object: any): any {
+    return this.httpClient.post(this.roomUrl + "/available", object);
+  }
+
+  public addBooking(booking: Booking): Observable<Booking> {
+    return this.httpClient.post<Booking>(this.bookingUrl, booking);
   }
 }
