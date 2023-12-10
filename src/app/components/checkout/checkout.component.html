@@ -1,0 +1,201 @@
+<div class="navigation">
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#hotelNav">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <h2>
+                    <a class="navbar-brand" href="#">SWAPNO <span>PURAN</span> RESORT
+                        <p class="logo_caption">Your Dreamy Resort</p>
+                    </a>
+                </h2>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="hotelNav">
+                <nav class="menu menu--iris">
+                    <ul class="nav navbar-nav menu__list">
+                        <li class="menu__item"><a [routerLink]="'/home'" class="menu__link">Home</a></li>
+                        <li class="menu__item"><a [routerLink]="'/home'" class="menu__link scroll">About</a></li>
+                        <li class="menu__item"><a [routerLink]="'/home'" class="menu__link scroll">Travel Guide</a></li>
+                        <li class="menu__item"><a [routerLink]="'/home'" class="menu__link scroll">Gallery</a></li>
+                        <li class="menu__item"><a [routerLink]="'/home'" class="menu__link scroll">Rooms</a></li>
+                        <li class="menu__item"><a data-toggle="modal" data-target="#contactModal"
+                                class="menu__link scroll">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </nav>
+
+    </div>
+</div>
+
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog">
+    <!-- Modal1 -->
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4>SWAPNO <span>PURAN</span> RESORT</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.3749975149794!2d88.2651361793457!3d22.639803000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f8833a8331c303%3A0xc422382111eb88fb!2z4Ka44KeN4Kas4Kaq4KeN4KaoIOCmquCnguCmsOCmoyhzYXBubyBwdXJvbik!5e0!3m2!1sen!2sin!4v1700675239312!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0; margin-top: 2%;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h5>Contact Us</h5>
+                <p class="contact-agile1"><strong>Phone : </strong> +91 9830292497</p>
+                <p class="contact-agile1"><strong>Email : </strong> <a href="mailto:swapnopuran557@gmail.com">
+                        swapnopuran557@gmail.com</a></p>
+                <p class="contact-agile1"><strong>Address : </strong> Jotgiri, Lakshmanpur, Howrah</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="fade-carousel slide" id="bs-carousel">
+    <!-- Overlay -->
+    <div class="overlay"></div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div class="item slides active">
+            <div class="slide-3"></div>
+            <div class="hero">
+                <div>
+                    <h4>SWAPNO PURAN RESORT</h4>
+                    <h3>Making your dream vacation come true</h3>
+                    <p>Welcome to our hotels</p>
+                </div>
+                <h5 style="font-size: 3em; margin-top: 5%; color: #AEE6E2;">YOUR BOOKING WAS SUCCESSFULLY CREATED</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="title-w3-agileits title-black-wthree">Booking Details</h3>
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Booking ID</th>
+                            <th>Person Name</th>
+                            <th>Email</th>
+                            <th>Room Number</th>
+                            <th>Check In</th>
+                            <th>Check Out</th>
+                            <th>Payment Status</th>
+                            <th>Booking Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{booking.id}}</td>
+                            <td>{{booking.personName}}</td>
+                            <td>{{booking.email}}</td>
+                            <td>{{booking.roomNumber}}</td>
+                            <td>{{booking.checkInDate | date:'dd-MM-yyyy'}}</td>
+                            <td>{{booking.checkOutDate | date:'dd-MM-yyyy'}}</td>
+                            <td *ngIf="booking.isPaid">Paid</td>
+                            <td *ngIf="!booking.isPaid">Not Paid</td>
+                            <td>{{booking.bookingStatus}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <button class="btn btn-hero btn-lg" role="button" (click)="generateInvoice()">DOWNLOAD INVOICE <i class="fas fa-download"></i></button>
+        </div>
+    </div>
+</div>
+
+<div class="invoice-box" id="invoice" *ngIf="displayInvoice" #invoice>
+    <table cellpadding="0" cellspacing="0">
+        <tr class="top">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td class="title">
+                            <h5 style="color: #2B3D62;">SWAPNO <span style="color: #F0DE0B;">PURAN</span> RESORT</h5>
+                            <img src="../../../assets/images/resort-scene-03.jpeg"
+                                style="width: 100%; max-width: 300px" />
+                        </td>
+
+                        <td>
+                            Booking Id: {{booking.id}}<br />
+                            Created: {{currentDate | date:'longDate'}}<br />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="information">
+            <td colspan="2">
+                <table>
+                    <tr>
+                        <td>
+                            <h6><strong>Invoice From</strong></h6>
+                            Swapno Puran Resort<br />
+                            Jotgiri, Lakshmanpur, Ganguli Para<br />
+                            Howrah 711114, West Bengal
+                        </td>
+
+                        <td>
+                            <h6><strong>Invoice To</strong></h6>
+                            {{booking.personName}}<br />
+                            Contact: {{booking.phoneNumber}}<br />
+                            Email: {{booking.email}}
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr class="heading">
+            <td>Payment Method</td>
+
+            <td>Payment ID</td>
+        </tr>
+
+        <tr class="details">
+            <td>Razorpay</td>
+
+            <td>{{booking.paymentId}}</td>
+        </tr>
+
+        <tr class="heading">
+            <td>Room Number</td>
+
+            <td>Price</td>
+        </tr>
+
+        <tr class="item last">
+            <td>{{booking.roomNumber}} - {{roomDetails.roomType}}</td>
+        
+            <td>Rs. {{booking.totalAmount}}</td>
+        </tr>
+
+        <tr class="total">
+            <td></td>
+
+            <td>Total: Rs. {{booking.totalAmount}}</td>
+        </tr>
+
+        <tr class="details">
+            <td>
+                <strong>This is a system generated invoice</strong>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<app-footer></app-footer>

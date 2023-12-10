@@ -7,6 +7,7 @@ export class Booking {
 	public phoneNumber : string;
 	public email : string;
 	public isPaid : boolean;
+    public paymentId : string;
 	public bookingStatus : string;
 
     constructor() {
@@ -19,5 +20,6 @@ export class Booking {
         this.email = '';
         this.isPaid = false;
         this.bookingStatus = '';
+        this.paymentId = '';
     }
 }

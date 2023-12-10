@@ -13,11 +13,15 @@ import { NotificationService } from 'src/app/services/notification.service';
 import { AddAndDisplayRoomsComponent } from './add-and-display-rooms/add-and-display-rooms.component';
 import { FooterComponent } from '../footer/footer.component';
 import { SharedFooterModule } from 'src/app/shared-modules/shared-footer.module';
+import { BookingsComponent } from './bookings/bookings.component';
+import { AdminAccountsComponent } from './admin-accounts/admin-accounts.component';
 
 @NgModule({
   declarations: [
     AdminConsoleComponent,
-    AddAndDisplayRoomsComponent
+    AddAndDisplayRoomsComponent,
+    BookingsComponent,
+    AdminAccountsComponent
   ],
   imports: [
     BrowserModule,

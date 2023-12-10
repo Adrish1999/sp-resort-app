@@ -27,7 +27,31 @@ export class RoomService {
     return this.httpClient.post(this.roomUrl + "/available", object);
   }
 
+  public getRoomByNumber(roomNumber: string): Observable<Room> {
+    return this.httpClient.post<Room>(this.roomUrl + '/number', roomNumber);
+  }
+
   public addBooking(booking: Booking): Observable<Booking> {
     return this.httpClient.post<Booking>(this.bookingUrl, booking);
+  }
+
+  public updateBooking(booking: Booking): Observable<Booking> {
+    return this.httpClient.put<Booking>(this.bookingUrl, booking);
+  }
+
+  public getAllBookings(): any {
+    return this.httpClient.get(this.bookingUrl);
+  }
+
+  public getAllBookingsByStatus(statusObject: any): any {
+    return this.httpClient.post(this.bookingUrl + "/status", statusObject);
+  }
+
+  public confirmBookingStatus(request: any): any {
+    return this.httpClient.post(this.bookingUrl + "/updateStatus", request);
+  }
+
+  public deleteBookingById(id: number): any {
+    return this.httpClient.delete(`${this.bookingUrl}/${id}`);
   }
 }

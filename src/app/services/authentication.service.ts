@@ -1,4 +1,4 @@
-import { HttpClient, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { environment } from 'src/environments/environment';
@@ -23,6 +23,14 @@ export class AuthenticationService {
 
   public register(user: User): Observable<User> {
     return this.httpClient.post<User>(`${this.host}/user/register`, user);
+  }
+
+  public getUsers() : Observable<User[]> {
+    return this.httpClient.get<User[]>(`${this.host}/user/list`);
+  }
+
+  public deleteUser(userId: number): any {
+    return this.httpClient.delete(`${this.host}/user/delete/${userId}`);
   }
 
   public logout(): void {

@@ -1,0 +1,23 @@
+@import url(../admin-console.component.css);
+
+.login_btn {
+    width: 100%;
+    background: #1B4F72 !important;
+    color: white !important;
+}
+
+.login_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.close_btn {
+    width: 100%;
+    background: #2f3b42 !important;
+    color: white !important;
+}
+
+.close_btn:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}

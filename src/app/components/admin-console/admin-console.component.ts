@@ -14,7 +14,7 @@ export class AdminConsoleComponent implements OnInit {
   constructor(private authenticationService: AuthenticationService, private router: Router, private notificationService: NotificationService) { }
 
   ngOnInit(): void {
-    this.router.navigateByUrl('/admin/addRoom');
+    this.router.navigateByUrl('/admin/bookings');
   }
 
   onLogout(): void {

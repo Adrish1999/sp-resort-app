@@ -1,4 +1,4 @@
-import { DOCUMENT } from '@angular/common';
+import { DOCUMENT, ViewportScroller } from '@angular/common';
 import { AfterViewInit, Component, HostListener, Inject, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ export class HomeComponent implements OnInit {
 
   windowScrolled: boolean = false;
 
-  constructor(@Inject(DOCUMENT) private document: Document) {
+  constructor(@Inject(DOCUMENT) private document: Document, private viewportScroller: ViewportScroller,) {
   }
 
   @HostListener("window:scroll", [])
@@ -30,6 +30,10 @@ export class HomeComponent implements OnInit {
         window.scrollTo(0, currentScroll - (currentScroll / 8));
       }
     })();
+  }
+
+  scrollToAnchor(elementId: string): void {
+    this.viewportScroller.scrollToAnchor(elementId);
   }
 
   ngOnInit(): void {

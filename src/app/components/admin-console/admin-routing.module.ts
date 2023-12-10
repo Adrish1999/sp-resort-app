@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddAndDisplayRoomsComponent } from './add-and-display-rooms/add-and-display-rooms.component';
 import { AdminConsoleComponent } from './admin-console.component';
 import { AuthGuard } from 'src/app/guards/auth.guard';
+import { BookingsComponent } from './bookings/bookings.component';
+import { AdminAccountsComponent } from './admin-accounts/admin-accounts.component';
 
 const routes: Routes = [
   {
@@ -13,6 +15,14 @@ const routes: Routes = [
         {
             path: 'addRoom',
             component: AddAndDisplayRoomsComponent
+        },
+        {
+          path: 'bookings',
+          component: BookingsComponent
+        },
+        {
+          path: 'accounts',
+          component: AdminAccountsComponent
         },
         {
           path: '',
