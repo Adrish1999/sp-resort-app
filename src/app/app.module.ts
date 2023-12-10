@@ -6,7 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule, HttpClientXsrfModule } from '@angular/common/http';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { LoginComponent } from './components/login/login.component';
 import { NotificationModule } from './notification.module';
@@ -57,10 +57,13 @@ register();
     MatInputModule,
     MatIconModule,
     MatButtonModule,
-
     CalendarModule.forRoot({
       provide: DateAdapter,
       useFactory: adapterFactory,
+    }),
+    HttpClientXsrfModule.withOptions({
+      cookieName: 'Awesome-Swapno-Puran',
+      headerName: 'Top-Of-Page'
     })
   ],
   providers: [AuthGuard, AuthenticationService, NotificationService, { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true }, RoomService, PaymentService],

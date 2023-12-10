@@ -1996,7 +1996,7 @@ ul.green-list li::before {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 5vw);
-    grid-gap: 1.5rem;
+    grid-gap: 1rem;
 }
 
 .gallery__img__amenities {
