@@ -6,7 +6,8 @@ import { Booking } from '../model/booking';
 })
 export class DataService {
 
-  constructor() { }
+  public bookingDetails: Booking = new Booking();
+  public bookingId: any;
 
-  public successBookingInfo: Booking = new Booking();
+  constructor() { }
 }

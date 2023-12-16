@@ -43,6 +43,10 @@ export class RoomService {
     return this.httpClient.get(this.bookingUrl);
   }
 
+  public getBookingById(id: number): Observable<Booking> {
+    return this.httpClient.get<Booking>(`${this.bookingUrl}/${id}`);
+  }
+
   public getAllBookingsByStatus(statusObject: any): any {
     return this.httpClient.post(this.bookingUrl + "/status", statusObject);
   }

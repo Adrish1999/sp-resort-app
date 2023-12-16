@@ -86,7 +86,7 @@ export class BookingsComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.roomService.deleteBookingById(id).subscribe(
         (response: any) => {
-          this.sendNotification(NotificationType.SUCCESS, 'Successfully Deleted Booking With ID ' + id);
+          this.sendNotification(NotificationType.SUCCESS, 'Successfully Cancelled Booking With ID ' + id);
         },
         (errorResponse: HttpErrorResponse) => {
           this.sendNotification(NotificationType.ERROR, 'An Error Occured While Deleting');

@@ -61,11 +61,12 @@ export class ReservationComponent implements OnInit, OnDestroy {
 
     this.subsriptions.push(
       this.roomService.addBooking(booking).subscribe(
-        (response: Booking) => {
+        (response: any) => {
           this.displayAvailableRooms = false;
           this.isRoomSelected = false;
           this.totalPrice = 0;
-          this.dataService.successBookingInfo = response;
+          this.dataService.bookingDetails = response;
+          this.dataService.bookingId = response.id;
           this.router.navigateByUrl('/checkout-success');
         },
         (errorResponse: HttpErrorResponse) => {
@@ -109,9 +110,9 @@ export class ReservationComponent implements OnInit, OnDestroy {
         }
       },
       prefill: {
-        name: 'Swapno Puran Resort',
-        email: 'swapnopuran@gmail.com',
-        contact: '9867568903'
+        name: formData.title + ' ' + formData.fname + ' ' + formData.lname,
+        email: formData.email,
+        contact: formData.phone
       },
       notes: {
         address: 'Swapno Puran Resort Booking'

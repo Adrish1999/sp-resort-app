@@ -25,12 +25,12 @@
                         </thead>
                         <tbody>
                             <tr *ngFor="let user of users; let odd = odd" [ngClass]="odd ? 'gradeU' : 'gradeC'">
-                                <td>{{user.userId}}</td>
+                                <td>{{user.id}}</td>
                                 <td>{{user.username}}</td>
                                 <td>{{user.password}}</td>
                                 <td>{{user.lastLoginDate | date:'dd-MM-yyyy hh:mm:ss'}}</td>
                                 <td>
-                                    <button class='btn btn-danger' (click)="onDeleteUser(user.userId)">Remove</button>
+                                    <button class='btn btn-danger' (click)="onDeleteUser(user.id)">Remove</button>
                                 </td>
                             </tr>
                         </tbody>

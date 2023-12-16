@@ -345,7 +345,7 @@ p.logo_caption {
 }
 
 .fade-carousel .slides .slide-2 {
-    background-image: url(../../../assets/images/resort-scene-01.jpeg);
+    background-image: url(../../../assets/images/hotel-entry.jpg);
 }
 
 .fade-carousel .slides .slide-3 {
@@ -782,6 +782,9 @@ p.about-para-1 {
     margin-right: 10px;
 }
 
+/********************************/
+/*          Team       */
+/********************************/
 
 
 /********************************/
@@ -1060,6 +1063,25 @@ p.about-para-1 {
         font-size: 3em;
     }
 
+    .team-Info-agileits h4 {
+        font-size: 23px;
+    }
+
+    .team-Info-agileits {
+        padding: 3.3em 0 0 3em;
+    }
+
+    .team-Info-agileits p {
+        margin: 1.3em 0 .8em;
+    }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        width: 33%;
+    }
+
     .cbp-ig-grid .cbp-ig-title {
         font-size: .9em;
         letter-spacing: 2px;
@@ -1161,6 +1183,21 @@ p.about-para-1 {
         padding: 20px 0;
     }
 
+    .team-Info-agileits {
+        padding: 3em 0 0 2.5em;
+        float: left;
+        width: 60%;
+    }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        width: 40%;
+        float: left;
+        margin-left: 0em;
+    }
+
     .cbp-ig-grid li:last-child,
     .cbp-ig-grid li:nth-child(3) {
         border-top: 1px solid #cfdbf3;
@@ -1210,6 +1247,34 @@ p.about-para-1 {
     p.logo_caption {
         letter-spacing: 2.2px;
         line-height: 17px;
+    }
+
+    .team-Info-agileits {
+        padding: 1.5em 0 0 1.9em;
+        width: 100%;
+        float: none;
+    }
+
+    .team-Info-agileits p {
+        font-size: 14px;
+    }
+
+    .team-Info-agileits span {
+        font-size: 11px;
+    }
+
+    .team-Info-agileits h4 {
+        font-size: 19px;
+    }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        min-height: 360px;
+        width: 83%;
+        margin: 0 auto;
+        float: none;
     }
 
     .banner-bottom h3 {
@@ -1324,6 +1389,14 @@ p.about-para-1 {
 
     .banner-bottom h3 {
         font-size: 13px;
+    }
+
+    .team-Info-agileits p {
+        font-size: 14.5px;
+    }
+
+    .team-Info-agileits h4 {
+        font-size: 20px;
     }
 
     .cbp-ig-grid .cbp-ig-title {
@@ -1569,6 +1642,17 @@ p.about-para-1 {
         width: 48%;
         margin: 0 .3em;
     }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        min-height: 318px;
+    }
+
+    .team-Info-agileits {
+        padding: 1.8em 0 0 2em;
+    }
 }
 
 @media(max-width: 414px) {
@@ -1582,6 +1666,18 @@ p.about-para-1 {
 
     .hero p {
         letter-spacing: 3px;
+    }
+
+    .team-Info-agileits {
+        padding: 1.5em 0 0 0em;
+    }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        min-height: 355px;
+        width: 100%;
     }
 
     .cbp-ig-grid li {
@@ -1723,6 +1819,13 @@ p.about-para-1 {
         padding: 40px 0px;
     }
 
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        min-height: 290px;
+    }
+
     .banner-bottom h3 span {
         font-size: 13px !important;
     }
@@ -1753,6 +1856,13 @@ p.about-para-1 {
 
     .hero p {
         letter-spacing: 0.4px;
+    }
+
+    .tab1 .team-img-w3-agile,
+    .tab2 .team-img-w3-agile,
+    .tab3 .team-img-w3-agile,
+    .tab4 .team-img-w3-agile {
+        min-height: 245px;
     }
 
     .hero h3 {
@@ -1817,6 +1927,10 @@ p.about-para-1 {
     .price-grid:nth-child(3) {
         margin-bottom: 1.5em;
     }
+
+    .team-Info-agileits {
+        padding: 0.2em 0 0 1.9em;
+    }
 }
 
 @media(max-width:600px) {
@@ -1828,6 +1942,14 @@ p.about-para-1 {
     .banner-bottom h3 span {
         font-size: 14px !important;
         letter-spacing: 1px;
+    }
+
+    .team-Info-agileits {
+        padding: 1.1em 0 0 1.9em;
+    }
+
+    .team-Info-agileits p {
+        margin: .6em 0 .1em;
     }
 
     .banner-bottom h3 {

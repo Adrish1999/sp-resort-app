@@ -13,7 +13,7 @@ import { NotificationService } from 'src/app/services/notification.service';
 })
 export class AdminAccountsComponent implements OnInit, OnDestroy {
 
-  public users: User[] = [];
+  public users: any[] = [];
   public showLoading: boolean = false;
   private subscriptions: Subscription[] = [];
 
@@ -27,7 +27,7 @@ export class AdminAccountsComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.authenticationService.getUsers().subscribe(
         (response: User[]) => {
-          this.users = [...response];
+          this.users = response;
         },
         (errorResponse: HttpErrorResponse) => {
           this.sendNotification(NotificationType.ERROR, errorResponse.error.message);
@@ -40,6 +40,7 @@ export class AdminAccountsComponent implements OnInit, OnDestroy {
     this.subscriptions.push(
       this.authenticationService.deleteUser(id).subscribe(
         (response: any) => {
+          this.showLoading = false;
           this.sendNotification(NotificationType.SUCCESS, 'Successfully Deleted User With ID ' + id);
         },
         (errorResponse: HttpErrorResponse) => {
