@@ -1,5 +1,5 @@
 export enum RoomPriceByType {
-    IMPERIAL = 4200,
-    PREMIUM = 2700,
-    EXECUTIVE = 2400
+    IMPERIAL = 3800,
+    PREMIUM = 2500,
+    EXECUTIVE = 2000
 }
