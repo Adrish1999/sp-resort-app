@@ -341,15 +341,15 @@ p.logo_caption {
 }
 
 .fade-carousel .slides .slide-1 {
-    background-image: url(../../../assets/images/resort-scene-03.jpeg);
-}
-
-.fade-carousel .slides .slide-2 {
     background-image: url(../../../assets/images/hotel-entry.jpg);
 }
 
+.fade-carousel .slides .slide-2 {
+    background-image: url(../../../assets/images/yellow-rooms-02.jpg);
+}
+
 .fade-carousel .slides .slide-3 {
-    background-image: url(../../../assets/images/resort-scene-02.jpeg);
+    background-image: url(../../../assets/images/swimming-pool-02.jpg);
 }
 
 
@@ -2018,6 +2018,14 @@ p.about-para-1 {
 
 .gallery-green {
     margin-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 1.5rem;
+}
+
+.gallery-swapno {
+    margin-top: 5%;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 5vw);
